@@ -27,10 +27,24 @@
 
 # Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
 
-def occurrences(str1, str2):
-  return print(str1.count(str2))
+# def occurrences(str1, str2):
+#   return print(str1.count(str2))
 
-occurrences('fleep floop', 'e')   # returns 2
-occurrences('fleep floop', 'p')   # returns 2
-occurrences('fleep floop', 'ee')  # returns 1
-occurrences('fleep floop', 'fe')  # returns 0
+# occurrences('fleep floop', 'e')   # returns 2
+# occurrences('fleep floop', 'p')   # returns 2
+# occurrences('fleep floop', 'ee')  # returns 1
+# occurrences('fleep floop', 'fe')  # returns 0
+
+# ---------------------------------------------------------------------------
+
+# Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product.
+
+def product(*args):
+  product = 1
+  for operand in args:
+    product *= operand
+  return print(product)
+
+product(-1, 4) # returns -4
+product(2, 5, 5) # returns 50
+product(4, 0.5, 5) # returns 10.0
